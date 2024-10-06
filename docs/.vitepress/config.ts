@@ -6,7 +6,7 @@ const base = "/jdh/";
 export default defineConfig({
   base,
   title: "简单鹤",
-  description: "简单鹤，简单的鹤，好喝的鹤",
+  description: "简单的鹤，好喝的鹤",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -15,16 +15,15 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '教程', link: '/tutorial' },
+          { text: '字根练习', link: '/gen'}
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/Flauver/jdh/' }
     ]
   }
 })
