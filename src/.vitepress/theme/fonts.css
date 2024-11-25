@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "kaiti-yima";
+    src: url("/kaiti-yima.woff2") format("woff2");
+}
+
+.kaiti-zigen {
+    font-family: "kaiti", "楷体", 'TH-Feon', 'TH-Tshyn-P2', 'TH-Tshyn-P0', 'TH-Tshyn-P1', 'TH-Tshyn-P16', '宋体', Baskerville, Georgia, "Liberation Serif", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, DFKai-SB, "TW\-Kai", serif;
+}
+
+.kaiti-yima {
+    font-family: "kaiti-yima", "楷体";
+}
+
+@font-face {
+    font-family: "outi-yima";
+    src: url("/outi-yima.woff2") format("woff2");
+}
+
+.outi-yima {
+    font-family: "outi-yima", "欧体楷书", "楷体";
+}
+
+:root {
+
+    --vp-c-brand-1: var(--vp-c-purple-1);
+    --vp-c-brand-2: var(--vp-c-purple-2);
+    --vp-c-brand-3: var(--vp-c-purple-3);
+    --vp-c-brand-soft: var(--vp-c-red-soft);
+
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
+            var(--vp-c-brand-1),
+            var(--vp-c-brand-3));
+    ;
+
+    --vp-home-hero-image-background-image: none;
+    --vp-home-hero-image-filter: none;
+    --vp-nav-bg-color: var(--vp-c-bg-soft);
+}
+
+.medium-zoom-overlay {
+    background-color: var(--vp-c-bg) !important;
+    z-index: 100;
+}
+
+.medium-zoom-overlay~img {
+    z-index: 101;
+}
+
+.medium-zoom--opened .medium-zoom-overlay {
+    opacity: 0.9 !important;
+}
