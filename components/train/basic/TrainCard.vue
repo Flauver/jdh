@@ -59,13 +59,6 @@ watch(userKeys, (newKeys) => {
             {{ card.name }}</div>
 
         <div class="flex flex-col" v-if="'rel' in card || 'kind' in card">
-            <div class="flex tracking-widest flex-col opacity-70" v-if="'rel' in card">
-                <div class="text-gray-500 text-sm">
-                    相关的字：</div>
-                <div>
-                    {{ card.rel }}</div>
-            </div>
-
             <div class=" tracking-widest pt-6 text-blue-600 dark:text-blue-300"
                 v-if="'kind' in card && card.kind == 'b'">
                 五个基础笔画</div>
