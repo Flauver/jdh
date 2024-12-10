@@ -23,3 +23,4 @@
 3. 打文章练习
 
 ### 下载
+https://github.com/Flauver/jdh/releases/download/v8.3.0/jdhmb8.3.0.7z

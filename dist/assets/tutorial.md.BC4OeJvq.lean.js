@@ -1,0 +1,1 @@
+import{_ as a,f as e,e as t,ab as r}from"./chunks/framework.txdTbKYm.js";const A=JSON.parse('{"title":"教程","description":"","frontmatter":{},"headers":[],"relativePath":"tutorial.md","filePath":"tutorial.md"}'),l={name:"tutorial.md"},o=r("",14),i=[o];function h(n,d,s,E,c,u){return t(),e("div",null,i)}const b=a(l,[["render",h]]);export{A as __pageData,b as default};
