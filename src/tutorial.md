@@ -25,3 +25,5 @@
 ### 下载
 码表：https://github.com/Flauver/jdh/releases/download/v8.4.0/jdhmb8.4.0.7z
 由简单鹤群友 Cloud 维护的Rime方案，包括了四码定长和可句中插入辅助码的整句方案：https://github.com/GGboxCloud/rime-JDhe
+
+![字根图](/zgt.png)
