@@ -19,11 +19,11 @@
 
 ### 入门步骤
 1. 使用字根练习器练习简单鹤字根
-2. 找到简单鹤QQ群并加入，方法：在有かなた（彼方）机器人的群里发送“群映射列表”
+2. 找到简单鹤QQ群并加入，使用彼方获得群号
 3. 打文章练习
 
 ### 下载
-码表：https://github.com/Flauver/jdh/releases/download/v8.4.0/jdhmb8.4.0.7z
+码表：https://github.com/Flauver/jdh/releases/download/v9.0.0/jdhmb9.0.0.7z
 由简单鹤群友 Cloud 维护的Rime方案，包括了四码定长和可句中插入辅助码的整句方案：https://github.com/GGboxCloud/rime-JDhe
 
 ![字根图](/zgt.png)
