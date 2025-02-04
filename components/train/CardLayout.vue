@@ -33,6 +33,51 @@ watch(() => p.progress, async (newV, oldV) => {
     }
 })
 
+function exportLocalStorage() {
+    let data = JSON.stringify(localStorage,null, 4);    
+    let blob = new Blob([data], {type: "charset=utf-8"});  
+    let url = URL.createObjectURL(blob);  
+  
+    let link = document.createElement('a');  
+    link.href = url;  
+    link.download = 'progress'; // 你可以设置任何你想要的下载文件名  
+    link.click();
+    link.remove()
+}
+
+function importLocalStorage() {
+    
+const fileInput = document.createElement('input');
+fileInput.type = 'file';
+ 
+fileInput.addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    
+    if (file) {
+        const reader = new FileReader();
+        
+        reader.onload = (event) => {
+            const contents = event.target.result;
+            
+            // 2. 将文件内容解析为 JSON 数据并写入 localStorage
+            try {
+                const parsedData = JSON.parse(contents);
+                Object.keys(parsedData).forEach(key => {
+                    localStorage.setItem(key, parsedData[key]);
+                });
+                alert('导入成功！');
+            } catch (error) {
+                alert('导入失败：文件格式错误！');
+            }
+        };
+        
+        reader.readAsText(file);
+    }
+});
+ 
+fileInput.click();
+}
+
 </script>
 
 <template>
@@ -55,7 +100,9 @@ watch(() => p.progress, async (newV, oldV) => {
 
     <div v-if="!showConfetti" class="text-gray-500 flex justify-between">
         <div class="text-gray-500">训练进度： {{ progress }} / {{ max }}</div>
+        <button @click="importLocalStorage">导入</button>
+        <button @click="exportLocalStorage">导出</button>
         <button class="btn btn-ghost btn-sm font-light" @click="$emit('restart')">restart</button>
     </div>
-
+    导入完了要刷新
 </template>
