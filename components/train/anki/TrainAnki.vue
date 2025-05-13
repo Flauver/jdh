@@ -13,7 +13,7 @@ const p = defineProps<{
     name: string
 }>()
 
-const zigenFontClass = inject('font') || 'outi-yima'
+const zigenFontClass = inject('font') || 'oppo-sans'
 const highlightStrokes = inject('high') as Set<string>
 
 const {
