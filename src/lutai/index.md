@@ -8,7 +8,7 @@ import {high} from "../high.ts"
 
 # 露台
 
-<Train zigenFont = "kaiti" name = "lutai" zigenJson = "/lutai/zigen.json" :high />
+<Train zigenFont = "oppo-sans" name = "lutai" zigenJson = "/lutai/zigen.json" :high />
 
 露台是24键四码定长/五三顶单字简词方案，大码乱序，小码音托
 
