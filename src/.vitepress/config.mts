@@ -46,6 +46,7 @@ export default defineConfig({
         items: [
           { text: '教程', link: '/tutorial' },
           { text: '字根练习', link: '/gen'},
+          { text: '音形无上秘籍', link: '/secret_manual'},
           { text: '露台', link: '/lutai'}
         ]
       }
