@@ -33,3 +33,9 @@
 3. 散连交
 4. 符合笔顺
 5. 字根取大
+
+## 下载
+
+加入QQ群：106246844
+
+Github 仓库：https://github.com/Flauver/dovepelia

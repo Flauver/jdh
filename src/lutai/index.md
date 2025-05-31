@@ -42,6 +42,8 @@ import {high} from "../high.ts"
 
 加入QQ群：106246844
 
+Github 仓库：https://github.com/Flauver/lutai
+
 ## 杂项
 
 ### 拆分规则
