@@ -47,7 +47,15 @@ export default defineConfig({
           { text: '教程', link: '/tutorial' },
           { text: '字根练习', link: '/gen'},
           { text: '音形无上秘籍', link: '/secret_manual'},
-          { text: '露台', link: '/lutai'}
+        ]
+      },
+      {
+        text: '其他有趣的东西',
+        items: [
+          { text: '露台', link: '/lutai' },
+          { text: '白鸠', link: '/dovepelia' },
+          { text: '呜喵码（同为简单鹤群管的方案）', link: 'https://dsqm.github.io/Unyaa-code/' },
+          { text: '汉字自动拆分系统（制作简单鹤，露台，呜喵码……的工具）', link: 'https://chaifen.app/' }
         ]
       }
     ],
