@@ -34,6 +34,12 @@ function cusRestart() {
 }
 
 watch(userKeys, (newKeys) => {
+    if (newKeys.includes(' ')) {
+        answer(false)
+        isCorrect.value = false
+        userKeys.value = ''
+        return
+    }
     // 多个编码没有打完就不提示错误
     if (newKeys.length < card.value.key!.length)
         return
