@@ -52,6 +52,7 @@ export default defineConfig({
       {
         text: '其他有趣的东西',
         items: [
+          { text: '你所不知道的汉语拼音知识', link: '/pinyin' },
           {
             text: '露台',
             items: [
