@@ -58,10 +58,19 @@ export default defineConfig({
             items: [
               { text: '基本', link: '/lutai' },
               { text: '符号', link: '/lutai/symbols' },
-              { text: '顶功', link: '/lutai/popping' }
+              { text: '顶功', link: '/lutai/popping' },
             ]
           },
           { text: '白鸠', link: '/dovepelia' },
+          {
+            text: '山樱无念',
+            link: '/sakurawunian',
+            items: [
+              { text: '拆分', link: '/sakurawunian/chaifen' },
+              { text: '编码', link: '/sakurawunian/encode' },
+              { text: '字根练习', link: '/sakurawunian/gen' },
+            ]
+          },
           { text: '呜喵码（同为简单鹤群管的方案）', link: 'https://dsqm.github.io/Unyaa-code/' },
           { text: '汉字自动拆分系统（制作简单鹤，露台，白鸠，呜喵码……的工具）', link: 'https://chaifen.app/' },
         ]
