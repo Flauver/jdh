@@ -61,7 +61,13 @@ export default defineConfig({
               { text: '顶功', link: '/lutai/popping' },
             ]
           },
-          { text: '白鸠', link: '/dovepelia' },
+          {
+            text: '白鸠',
+            link: '/dovepelia',
+            items: [
+              { text: '元素练习', link: '/dovepelia/gen' },
+            ]
+          },
           {
             text: '山樱无念',
             link: '/sakurawunian',
