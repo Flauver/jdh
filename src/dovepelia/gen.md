@@ -18,4 +18,11 @@ import {high} from "../high.ts"
 
 切换到数字键盘
 
+<Train zigenFont = "oppo-sans" name = "dovepelia-yunmu" zigenJson = "/dovepelia/yunmu_special.json" :high />
+
+---
+
+# 白鸠全带调韵母练习
+切换到数字键盘
+
 <Train zigenFont = "oppo-sans" name = "dovepelia-yunmu" zigenJson = "/dovepelia/yunmu.json" :high />
