@@ -23,9 +23,9 @@
 3. 打文章练习
 
 ### 下载
-码表：https://github.com/Flauver/jdh/releases/download/v9.1.0/jdhmb9.1.0.7z
+码表：https://github.com/Flauver/jdh/releases/download/v9.2.0/jdhmb9.2.0.7z
 
-由简单鹤群友 Cloud 维护的Rime方案，包括了四码定长和可句中插入辅助码的整句方案：
+Rime方案：包括了四码定长和可句中插入辅助码的整句方案
 
 https://github.com/GGboxCloud/rime-JDhe
 
