@@ -9,7 +9,7 @@ import {high} from "../high.ts"
 # 白鸠声母练习
 切换到数字键盘
 
-<Train zigenFont = "oppo-sans" name = "dovepelia-shengmu" zigenJson = "/dovepelia/shengmu.json" :high />
+<Train zigenFont = "noto" name = "dovepelia-shengmu" zigenJson = "/dovepelia/shengmu.json" :high />
 
 ---
 
@@ -18,11 +18,11 @@ import {high} from "../high.ts"
 
 切换到数字键盘
 
-<Train zigenFont = "oppo-sans" name = "dovepelia-yunmu" zigenJson = "/dovepelia/yunmu_special.json" :high />
+<Train zigenFont = "noto" name = "dovepelia-yunmu" zigenJson = "/dovepelia/yunmu_special.json" :high />
 
 ---
 
 # 白鸠全带调韵母练习
 切换到数字键盘
 
-<Train zigenFont = "oppo-sans" name = "dovepelia-yunmu" zigenJson = "/dovepelia/yunmu.json" :high />
+<Train zigenFont = "noto" name = "dovepelia-yunmu" zigenJson = "/dovepelia/yunmu.json" :high />

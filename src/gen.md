@@ -8,4 +8,4 @@ import {high} from "./high.ts"
 
 # 简单鹤字根练习
 
-<Train zigenFont = "oppo-sans" name = "jdh" :high />
+<Train zigenFont = "noto" name = "jdh" :high />

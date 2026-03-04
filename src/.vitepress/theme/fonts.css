@@ -21,12 +21,12 @@
 }
 
 @font-face {
-    font-family: "oppo-sans";
-    src: url("/OPPOSansChai-1.1.woff2") format("woff2");
+    font-family: "noto";
+    src: url("/NotoSerifSCChai-Regular-1.0.woff2") format("woff2");
 }
 
-.oppo-sans {
-    font-family: "oppo-sans", "黑体";
+.noto {
+    font-family: "noto", "黑体";
 }
 
 :root {

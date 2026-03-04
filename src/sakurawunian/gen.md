@@ -8,4 +8,4 @@ import {high} from "../high.ts"
 
 # 山樱无念字根练习
 
-<Train zigenFont = "oppo-sans" name = "sakurawunian" zigenJson = "/sakurawunian/zigen.json" :high />
+<Train zigenFont = "noto" name = "sakurawunian" zigenJson = "/sakurawunian/zigen.json" :high />
