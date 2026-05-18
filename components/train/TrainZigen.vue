@@ -22,7 +22,7 @@ provide("font", p.zigenFont)
 const schemaName = getSchemaNameFromRoute()
 const name = p.name || schemaName
 const cardsName = `${name}_gen`
-const realJsonName = (json: string | undefined, jsonMainName: string) => json ? json : `/${schemaName}/${jsonMainName}.json`
+const realJsonName = (json: string | undefined, jsonMainName: string) => json ? json : `/${name}/${jsonMainName}.json`
 
 const cards = shallowRef<ZigenCard[]>(cache[cardsName])
 
