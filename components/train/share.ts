@@ -36,23 +36,23 @@ export type HanziCardMap = Map<string, HanziCard>
 export type ZigenCardMap = Map<string, ZigenCard>
 
 export async function fetchJsonWithCache(url: string) {
-    if (url in fetchCache)
-        return fetchCache[url]
-
     let urlFixed = url
     if (url[0] === '/') {
         urlFixed = withBase(url)
     }
 
+    if (urlFixed in fetchCache)
+        return fetchCache[urlFixed]
+
     try {
         const req = await fetch(urlFixed)
         const json = await req.json()
-        fetchCache[url] = json
+        fetchCache[urlFixed] = json
         return json
 
     } catch (error) {
         if (error instanceof Error)
-            alert(`无法下载或解析《${url}》文件：${error.cause}`)
+            alert(`无法下载或解析《${urlFixed}》文件：${error.message}`)
         throw error
     }
 }
