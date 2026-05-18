@@ -20,9 +20,13 @@ const p = defineProps<{
 provide("font", p.zigenFont)
 
 const schemaName = getSchemaNameFromRoute()
-const name = p.name || schemaName
+const name = p.name || schemaName || 'jdh'
 const cardsName = `${name}_gen`
-const realJsonName = (json: string | undefined, jsonMainName: string) => json ? json : `/${name}/${jsonMainName}.json`
+const realJsonName = (json: string | undefined, jsonMainName: string) => {
+    if (json) return json
+    const safeName = name || 'jdh'
+    return `/${safeName}/${jsonMainName}.json`
+}
 
 const cards = shallowRef<ZigenCard[]>(cache[cardsName])
 
