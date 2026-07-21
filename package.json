@@ -21,7 +21,7 @@
   "scripts": {
     "dev": "vitepress dev src",
     "build": "vitepress build src",
-    "build2": "vitepress build src --base /jdh/",
+    "build2": "vitepress build src --base /jdhwebsite/",
     "preview": "vitepress preview src "
   },
   "dependencies": {

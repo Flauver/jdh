@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { shallowRef, watch, onMounted, inject } from "vue";
 import { useReview } from "./useReview";
-import { Card } from "../share";
+import { Card, ZigenCard } from "../share";
 import CardLayout from "../CardLayout.vue";
+import StatsPanel from "./StatsPanel.vue";
 
 const p = defineProps<{
     /** 复习卡片的数据 */
@@ -13,7 +14,7 @@ const p = defineProps<{
 
 const zigenFontClass = inject('font') || 'oppo-sans'
 
-const { card, restart, answer, progress, isFirst } = useReview(p.id, p.cards)
+const { card, restart, answer, progress, isFirst, getCardStats, getKeyStats } = useReview(p.id, p.cards as readonly { key: string }[])
 
 const isCorrect = shallowRef(true)
 const userKeys = shallowRef('')
@@ -83,4 +84,9 @@ watch(userKeys, (newKeys) => {
             （{{ card.comp }}）</span>
     </div>
 </CardLayout>
+<StatsPanel
+    :cards="cards as readonly ZigenCard[]"
+    :card-stats="getCardStats()"
+    :key-stats="getKeyStats()"
+/>
 </template>

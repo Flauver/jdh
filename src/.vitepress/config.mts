@@ -4,7 +4,7 @@ import tailwind from "tailwindcss"
 import autoprefixer from "autoprefixer"
 import { sidebar } from './sidebar'
 
-const base = "/jdh/";
+const base = "/jdhwebsite/";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
